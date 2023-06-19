@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SpecDiff-GAN Demo</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>SpedDiff-GAN Demo</h1>
+  <table>
+    <tr>
+      <th>Speaker ID</th>
+      <th>Reference Audio</th>
+      <th>SpecDiff-GAN (proposed)</th>
+      <th>DiffGAN-TTS (base)</th>
+      <th>FastSpeech2</th>
+      <th>Ref.Mel + Vocoder</th>
+    </tr>
+    
+    <tr>
+    <td>speaker1</td>
+      <td><audio controls src="assets\audio\model1\speaker1.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker1.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker1.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker1.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker1.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker2</td>
+      <td><audio controls src="assets\audio\model1\speaker2.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker2.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker2.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker2.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker2.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker3</td>
+      <td><audio controls src="assets\audio\model1\speaker3.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker3.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker3.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker3.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker3.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker4</td>
+      <td><audio controls src="assets\audio\model1\speaker4.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker4.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker4.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker4.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker4.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker5</td>
+      <td><audio controls src="assets\audio\model1\speaker5.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker5.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker5.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker5.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker5.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker6</td>
+      <td><audio controls src="assets\audio\model1\speaker6.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker6.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker6.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker6.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker6.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker7</td>
+      <td><audio controls src="assets\audio\model1\speaker7.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker7.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker7.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker7.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker7.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker8</td>
+      <td><audio controls src="assets\audio\model1\speaker8.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker8.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker8.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker8.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker8.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker9</td>
+      <td><audio controls src="assets\audio\model1\speaker9.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker9.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker9.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker9.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker9.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker10</td>
+      <td><audio controls src="assets\audio\model1\speaker10.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker10.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker10.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker10.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker10.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker11</td>
+      <td><audio controls src="assets\audio\model1\speaker11.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker11.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker11.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker11.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker11.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker12</td>
+      <td><audio controls src="assets\audio\model1\speaker12.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker12.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker12.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker12.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker12.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker13</td>
+      <td><audio controls src="assets\audio\model1\speaker13.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker13.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker13.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker13.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker13.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker14</td>
+      <td><audio controls src="assets\audio\model1\speaker14.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker14.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker14.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker14.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker14.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker15</td>
+      <td><audio controls src="assets\audio\model1\speaker15.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker15.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker15.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker15.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker15.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker16</td>
+      <td><audio controls src="assets\audio\model1\speaker16.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker16.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker16.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker16.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker16.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker17</td>
+      <td><audio controls src="assets\audio\model1\speaker17.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker17.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker17.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker17.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker17.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker18</td>
+      <td><audio controls src="assets\audio\model1\speaker18.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker18.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker18.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker18.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker18.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker19</td>
+      <td><audio controls src="assets\audio\model1\speaker19.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker19.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker19.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker19.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker19.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker20</td>
+      <td><audio controls src="assets\audio\model1\speaker20.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker20.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker20.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker20.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker20.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker21</td>
+      <td><audio controls src="assets\audio\model1\speaker21.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker21.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker21.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker21.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker21.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker22</td>
+      <td><audio controls src="assets\audio\model1\speaker22.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker22.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker22.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker22.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker22.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker23</td>
+      <td><audio controls src="assets\audio\model1\speaker23.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker23.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker23.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker23.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker23.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker24</td>
+      <td><audio controls src="assets\audio\model1\speaker24.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker24.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker24.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker24.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker24.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker25</td>
+      <td><audio controls src="assets\audio\model1\speaker25.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker25.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker25.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker25.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker25.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker26</td>
+      <td><audio controls src="assets\audio\model1\speaker26.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker26.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker26.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker26.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker26.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker27</td>
+      <td><audio controls src="assets\audio\model1\speaker27.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker27.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker27.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker27.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker27.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker28</td>
+      <td><audio controls src="assets\audio\model1\speaker28.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker28.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker28.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker28.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker28.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker29</td>
+      <td><audio controls src="assets\audio\model1\speaker29.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker29.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker29.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker29.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker29.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker30</td>
+      <td><audio controls src="assets\audio\model1\speaker30.wav"></audio></td><td><audio controls src="assets\audio\model2\speaker30.wav"></audio></td><td><audio controls src="assets\audio\model3\speaker30.wav"></audio></td><td><audio controls src="assets\audio\model4\speaker30.wav"></audio></td><td><audio controls src="assets\audio\model5\speaker30.wav"></audio></td>
+    </tr>
+  
+  </table>
+</body>
+</html>
