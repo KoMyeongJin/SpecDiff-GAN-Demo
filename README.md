@@ -1,7 +1,7 @@
 # SpecDiff-GAN Audio Demo
 
-SpecDiff-GAN 모델을 VCTK Dataset을 이용하여 학습한 결과
-생성된 Mel-spectrogram을 [HiFi-GAN](https://github.com/jik876/hifi-gan) 보코더를 이용하여 합성
+[SpecDiff-GAN](https://github.com/KoMyeongJin/SpecDiff-GAN/) 모델을 VCTK Dataset을 이용하여 학습한 결과
+생성된 Mel-spectrogram을 [HiFi-GAN](https://github.com/jik876/hifi-gan/) 보코더를 이용하여 합성
 
 ## 비교 모델
 - Pytorch implementation of [DiffGAN-TTS](https://github.com/keonlee9420/DiffGAN-TTS/)
